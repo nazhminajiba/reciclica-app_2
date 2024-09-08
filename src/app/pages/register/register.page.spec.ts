@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { IonicModule, ToastController } from '@ionic/angular';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RegisterPageModule } from './register.module';
+import { registerPageModule } from './register.module';
 import { Store, StoreModule } from '@ngrx/store';
 import { AppState } from 'src/store/AppState';
 import { loadingReducer } from 'src/store/loading/loading.reducers';
@@ -28,7 +28,7 @@ describe('RegisterPage', () => {
         IonicModule.forRoot(),
         AppRoutingModule,
         ReactiveFormsModule,
-        RegisterPageModule,
+        registerPageModule,
         StoreModule.forRoot([]),
         StoreModule.forFeature("loading", loadingReducer),
         StoreModule.forFeature("login", loginReducer),
