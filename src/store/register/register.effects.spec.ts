@@ -4,10 +4,10 @@ import { TestBed } from "@angular/core/testing";
 import { EffectsModule } from "@ngrx/effects";
 import { provideMockActions } from "@ngrx/effects/testing";
 import { AuthService } from "src/app/services/auth/auth.service";
-import { User } from "src/app/modul/user/User";
+import { User } from "src/app/model/user/User";
 import { RegisterEffects } from "./register.effects";
 import { register, registerFail, registerSuccess } from "./register.actions";
-import { UserRegister } from "src/app/modul/user/UserRegister";
+import { UserRegister } from "src/app/model/user/UserRegister";
 
 describe('Register effects', () =>{
 

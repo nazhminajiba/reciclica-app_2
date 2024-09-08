@@ -4,12 +4,12 @@ import { Router } from '@angular/router';
 import { IonicModule, ToastController } from '@ionic/angular';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { registerPageModule } from './register.module';
+import { RegisterPageModule } from './register.module';
 import { Store, StoreModule } from '@ngrx/store';
 import { AppState } from 'src/store/AppState';
 import { loadingReducer } from 'src/store/loading/loading.reducers';
 import { registerReducer } from 'src/store/register/register.reducers';
-import { UserRegister } from 'src/app/modul/user/UserRegister';
+import { UserRegister } from 'src/app/model/user/UserRegister';
 import { register, registerFail, registerSuccess } from 'src/store/register/register.actions';
 import { loginReducer } from 'src/store/login/login.reducers';
 
@@ -28,7 +28,7 @@ describe('RegisterPage', () => {
         IonicModule.forRoot(),
         AppRoutingModule,
         ReactiveFormsModule,
-        registerPageModule,
+        RegisterPageModule,
         StoreModule.forRoot([]),
         StoreModule.forFeature("loading", loadingReducer),
         StoreModule.forFeature("login", loginReducer),

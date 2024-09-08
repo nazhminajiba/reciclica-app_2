@@ -4,7 +4,7 @@ import { catchError, map, switchMap } from "rxjs/operators";
 import { AuthService } from "src/app/services/auth/auth.service";
 import { of } from "rxjs";
 import { register, registerFail, registerSuccess } from "./register.actions";
-import { UserRegister } from "src/app/modul/user/UserRegister";
+import { UserRegister } from "src/app/model/user/UserRegister";
 
 @Injectable()
 export class RegisterEffects {

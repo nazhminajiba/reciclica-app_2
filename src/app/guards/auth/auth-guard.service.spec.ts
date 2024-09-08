@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AuthGuard } from './auth-guard';
+import { AuthGuard } from './auth-guard.service';
 import { Store, StoreModule } from '@ngrx/store';
 import { loginReducer } from 'src/store/login/login.reducers';
 import { AppState } from 'src/store/AppState';
 import { loginSuccess } from 'src/store/login/login.actions';
-import { User } from 'src/app/modul/user/User';
+import { User } from 'src/app/model/user/User';
 import { Router, RouterModule } from '@angular/router';
 
 describe('AuthGuard', () => {

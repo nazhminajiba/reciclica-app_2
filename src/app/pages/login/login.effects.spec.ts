@@ -7,7 +7,7 @@ import { TestBed } from "@angular/core/testing";
 import { EffectsModule } from "@ngrx/effects";
 import { provideMockActions } from "@ngrx/effects/testing";
 import { AuthService } from "src/app/services/auth/auth.service";
-import { User } from "src/app/modul/user/User";
+import { User } from "src/app/model/user/User";
 
 describe('Login effects', () =>{
 

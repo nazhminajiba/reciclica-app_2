@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="success">
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+    <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>KOS MURAH JAKAL</ion-title>
   </ion-toolbar>
@@ -20,8 +20,7 @@
     </ion-item>
   </ion-list>
 
-  <app-pickup-call-card status="hold" updateAt="24/08/2024 16:21" createdAt="24/08/2024"
-  notes="Menerima Jasa Cari Kos dan Angkut Barang Wilayah Jakal">
+  <app-pickup-call-card status="hold" updatedAt="24/08/2024 12:30:00" createdAt="23/08/2024" notes="Menerima pesanan Trischies Pizza di seluruh dunia">
     <ion-card-header header>
       <ion-card-subtitle>Last pickup call</ion-card-subtitle>
     </ion-card-header>
@@ -29,7 +28,7 @@
   </app-pickup-call-card>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="success" (click)="newPickupCall()">
+    <ion-fab-button color="success" (click)="goToPickupCall()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>

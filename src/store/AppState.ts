@@ -1,8 +1,9 @@
-import { LoadingState } from "./loading/LoadingState";
-import { LoginState } from "./login/LoginState";
+import { LoadingState } from './loading/LoadingState';
+import { LoginState } from './login/LoginState';
+import { RegisterState } from './register/RegisterState';
 
 export interface AppState {
-  register: any;
   loading: LoadingState;
-  login: LoginState
+  login: LoginState;
+  register: RegisterState;
 }

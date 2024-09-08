@@ -1,8 +1,8 @@
 import { Action, createReducer, on } from "@ngrx/store";
+import { AppInitialState } from "../login/AppInitialState";
 import { RegisterState } from "./RegisterState";
 import { register, registerFail, registerSuccess } from "./register.actions";
 import { state } from "@angular/animations";
-import { AppInitialState } from "../AppInitialState";
 
 const initialState = AppInitialState.register;
 const reducer = createReducer(initialState,

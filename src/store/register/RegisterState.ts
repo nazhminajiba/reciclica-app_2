@@ -1,5 +1,5 @@
 export class RegisterState{
-    error: any;
-    isRegistered?: boolean;
-    isRegistering?: boolean;
-  }
+  error: any;
+  isRegistered?: boolean;
+  isRegistering?: boolean;
+}

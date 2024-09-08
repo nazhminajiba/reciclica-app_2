@@ -1,8 +1,7 @@
-import { UserRegister } from "src/app/modul/user/UserRegister";
-import { AppInitialState } from "../AppInitialState";
+import { UserRegister } from "src/app/model/user/UserRegister";
+import { AppInitialState } from "../login/AppInitialState"
 import { registerReducer } from "./register.reducers";
 import { register, registerFail, registerSuccess } from "./register.actions";
-
 
 describe('Register store', () => {
   it('register', () => {
@@ -36,7 +35,7 @@ describe('Register store', () => {
       ...AppInitialState.register,
       isRegistering: true
     };
-    const error = {error: 'anyError'}
+    const error = {error: 'any error'}
     const newState = registerReducer(initialState, registerFail({error}))
     expect(newState).toEqual({
       ...initialState,

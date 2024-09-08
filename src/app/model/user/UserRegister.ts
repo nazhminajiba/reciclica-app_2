@@ -1,5 +1,4 @@
-import { Address } from "../address/address";
-
+import { Address } from "../address/Address";
 
 export class UserRegister {
   name: string = '';

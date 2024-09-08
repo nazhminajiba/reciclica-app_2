@@ -1,5 +1,5 @@
 import { createAction, props } from "@ngrx/store";
-import { UserRegister } from "src/app/modul/user/UserRegister";
+import { UserRegister } from "src/app/model/user/UserRegister";
 
 export const register = createAction('[Register]', props<{userRegister: UserRegister}>());
 export const registerSuccess = createAction('[Register] Success');
